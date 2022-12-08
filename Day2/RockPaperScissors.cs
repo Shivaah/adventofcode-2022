@@ -35,7 +35,6 @@ internal class RockPaperScissors : ISolution
             .Select(x => (MapPlayWithChoice(x[0]), MapPlayWithChoice(x[1])))
             .Chunk(3);
           
-
         foreach ((Choice, Choice)[] round in rounds)
         {
             points += round.Select(play =>
@@ -65,7 +64,6 @@ internal class RockPaperScissors : ISolution
             .Select(x => (MapPlayWithChoice(x[0]), MapPlayWithResult(x[1])))
             .Chunk(3);
         
-
         foreach ((Choice, Result)[] round in rounds)
         {
             points += round.Select(play =>
