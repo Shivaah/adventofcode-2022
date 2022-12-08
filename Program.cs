@@ -1,9 +1,11 @@
 ﻿using AdventOfCode;
 using AdventOfCode.Day1;
+using AdventOfCode.Day2;
 
 var solutions = new Dictionary<string, ISolution>()
 {
-    {  "Day1", new CalorieCounting() }
+    {  "Day1", new CalorieCounting() },
+    {  "Day2", new RockPaperScissors() }
 };
 
 foreach (var key in solutions.Keys)
